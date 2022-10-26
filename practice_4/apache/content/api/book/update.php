@@ -20,7 +20,7 @@ $data = json_decode(file_get_contents("php://input"));
 if (
     !empty($data->id) &&
     !empty($data->name) &&
-    !empty($data->description)
+    !empty($data->author)
 ) {
     $book->id = $data->id;
     $book->name = $data->name;
